@@ -1,0 +1,1233 @@
+@CHARSET "ISO-8859-1";
+/*
+Autor und Copyright bei Pascal Garber, 2012
+
+Hier habe ich Anpassungen gemacht, die in der Weboberflaeche von ePages nicht moeglich sind.
+Alles was mit !important gekennzeichnet ist, wurde manuell bearbeitet, aber teils auch Felder ohne diese Kennzeichnung.
+*/
+
+/*
+FARBEN
+Dunkles Orange: #db7d00
+Mittleres Orange: #dbad70
+Helles Orange: #dbc3a3
+
+*/
+
+body {
+    background-color:#f3f3f3 !important;
+}
+.Middle {
+    background-color:white !important;
+}
+
+a {
+    color: #d67922 !important;
+}
+
+/* ---------------------------- Iconset ---------------------------- */
+/*
+vorerst deaktivert bis es ein passenderes Icon für die anderen Suchbottons gibt 
+.SearchIcon {
+    background-image: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/suche-icon.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+    height: 26px !important;
+    width: 23px !important;
+    left: 0;
+    top: 0 !important;
+}*/
+/*
+vorerst deaktivert bis es ein passenderes Icon gibt 
+.BasketIcon {
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/warenkorb-icon.png") !important;
+    height: 26px !important;
+    width: 23px !important;
+    left: 0;
+    top: 0 !important;
+}
+
+/*
+ * Alle Textfelder im Header anpassen
+ *
+input {
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: 10px !important;
+    height: 26px !important;
+    width: auto;
+    background-color: #e4e5e5 !important;
+}
+*/
+
+.ep-uiInput-wrap .ep-uiInput {
+    font-family: Tahoma,Verdana,Helvetica;
+    font-size: 12px;
+}
+
+/*
+ * Formatierung für die standard horizontale Kategorienavigation
+ */
+.NavBarTop .NavigationElement {
+    /* ueberall kein !important, da die Werte im dropdownmenu noch ueberschrieben werden sollen */
+    /*background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/nav/scrollbar_oben.png") no-repeat scroll left top transparent;
+    */
+    background: none;
+    font-size: 11px;
+    height: 61px;
+    line-height: 27px;
+    margin: 0; 
+    padding-left: 0; !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/*
+ * Formatierung für die standard horizontale Kategorienavigation wenn eine Kategorie ausgewaelt wurde,
+ * gemeint ist nicht der Mouseover effekt
+ */
+.NavBarTop .Active {
+    /* ueberall kein !important, da die Werte im dropdownmenu noch ueberschrieben werden sollen */
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/nav/scrollbar_oben_active.png") repeat-x scroll left top transparent;
+    font-size: 11px;
+    height: 61px;
+    line-height: 27px;
+    margin: 0;
+    padding: 0 0 0 4px;
+    width: auto;
+}
+
+/*
+ * Formatierung für die standard horizontale Kategorienavigation eines links (jeder ist ein link)
+ */
+.NavBarTop li.NavigationElement a {
+    /* ueberall kein !important, da die Werte im dropdownmenu noch ueberschrieben werden sollen */
+    /* backgound nicht nötig da der Hintergrund bereits stimmt
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/nav/navbar.png") no-repeat scroll right top transparent;
+    */
+    background: none;
+    display: block;
+    color: #ffffff !important;
+    height: 61px;
+    line-height: 27px;
+    padding: 10px 10px 0 2px;
+}
+
+/*
+ * Formatierung für die standard horizontale Kategorienavigation eines links wenn eine Kategorie ausgewaelt wurde,
+ * ebenfalls als Mouseover-effekt
+ */
+.NavBarTop li.NavigationElement.Active a,
+.NavBarTop li.NavigationElement a:hover {
+    /* ueberall kein !important, da die Werte im dropdownmenu noch ueberschrieben werden sollen */
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/nav/scrollbar_oben_active.png") repeat-x scroll left top transparent;
+    color: #d67922 !important;
+    display: block;
+    height: 61px;
+    line-height: 27px;
+    padding: 10px 10px 0 2px;
+    text-decoration: none;
+}
+
+/* ---------------------------- Ausgeklapte DropDownList ---------------------------- */
+
+/*
+ * Dies ist notwendig damit sich die Position des DropDownMenues nicht an der Postion der Oberkategorie orientiert
+ */
+/*.Div .Header .PropertyContainer .SizeContainer > *,
+.Div .Footer .PropertyContainer .SizeContainer > *,
+.Div .HorizontalNavBar .PropertyContainer .SizeContainer > *,*/
+.Div .NavBarTop .SizeContainer > *,
+.Div .NavBarBottom .SizeContainer > *,
+.Div .NavBarTop .SizeContainer .NavigationElement,
+.Div .NavBarBottom .SizeContainer .NavigationElement {
+    position: static;
+    padding: 0;
+    margin: 0;
+}
+
+/**
+ * Das Dropdownmenu, sein geloeschter Schatten, seine Position, seine Hintergrundfarbe, seine groesse..
+ */
+ul.DropDownList li.NavigationElement ul {
+    position: absolute !important;
+    left: 0 !important;
+    width: 861px !important; /*-20 fuer den Rand*/
+    height: 73px;
+    
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-color: #ffffff;
+    border-style: 0;
+    border: 0 !important;
+    box-shadow: none;
+    /* display: none; */
+    
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    
+    background: none repeat scroll 0 0 #ffffff !important;
+    
+    white-space: normal;
+    z-index: 9999;
+}
+
+/**
+ * Das Aktive Menue immer eingeblendet lassen
+ */
+ul.DropDownList li.NavigationElement.Active ul {
+    z-index: 9998 !important; 
+    display: block !important;
+}
+
+/**
+ * GESAMTBox: um Menu und DropDownMenue
+ */
+.NavBarTop {
+    padding-left: 10px; !important;
+    padding-right: 10px !important;
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/nav/navgesamt.png") repeat scroll left top transparent !important;
+	height: 137px;
+	width: 881px;
+}
+
+/* GESAMTBox: Box in GesamtBox und Box in Box in GesamtBox */
+.NavBarTop .SizeContainer,
+.NavBarTop.HorizontalNavBar {
+	height: 137px !important;
+	width: 861px !important;
+}
+
+/* Wirkliche Box um den anklickbaren Hauptkategorien an sich mit einer kleineren hoehe als die GESAMTBox */
+ul.HorizontalDisplay.NavBarElement0.DropDownList {
+	width: 861px !important;
+	overflow: hidden !important; /*Uebergrosses Menue verstecken da sowieso nicht gewuenscht*/
+}
+
+/*
+ * Kasten um die Links im Dropdownmenues
+ */
+ul.DropDownList li ul li {
+    float:left !important; /* sorgt dafuer, dass im Drop-Down-Menu die Unterkategorien nebeneinander angezeigt werden */
+    padding: 0 0 0 0 !important;
+    width: 140px !important; /* Bewirkt abstand seitlich zwischen den Elementen im Dropdownmenu */
+    border: 0 !important;
+    height: auto !important;
+}
+
+/*
+ * Links innerhalb des DropDownMenus
+ */
+ul.DropDownList li ul li a {
+    color: #000000 !important;
+    background: none !important;
+    padding: 0 0 0 0 !important;  /* top, right, buttom, left */
+    border: 0 !important;
+    height: auto !important;
+}
+
+/*
+ * Links innerhalb des DropDownMenus Schriftart
+ */
+#DropDownList12375103 li ul li a, #DropDownList12375103 li ul li a span {
+    color: #000000 !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+/* ---------------------------- Footer ---------------------------- */
+.Footer .NavigationElement {
+    background: none !important;
+    font-size: 10px; !important;
+    margin: 0;
+    padding: 0 0 0 0 !important; /* top, right, buttom, left */
+    background: none !important;
+    background-color: #db7d00 !important;
+}
+
+.Footer .NavigationElement a {
+    color: #ffffff !important;
+    font-size: 10px; !important;
+}
+
+.Footer .PropertyContainer {
+    color: #ffffff !important;
+    font-size: 1px;
+    height: 25px;
+    margin: 0;
+    padding: 0 0 0 0 !important;
+    text-align: center;
+    background-color: #db7d00 !important;
+}
+/* ---------------------------- Suchfeld, Warenkorb, Anmeldung ---------------------------- */
+/*
+ * Elternelement fuer Suchfeld, Warenkorb, Anmeldung, Logo
+ */
+.Div .Header .SizeContainer .ContextBox {
+    /*width: 170px !important; / Damit sie nicht nebeneinander angezeigt werden sondern untereinander /
+    height: 90px !important;
+    font-family: Verdana !important;
+    color: black !important;
+    font: normal !important;*/
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.Div .Header .SizeContainer {
+    font-family: Verdana !important;
+    color: black !important;
+    font: normal !important;
+    border: 0 !important;
+    margin: 0 ;
+}
+/*
+ * Linkeinstellungen fuer das obrige Elternelement
+ */
+.Div .Header .SizeContainer a {
+    border: 0 !important;
+    color: black !important;
+    font: normal !important;
+    text-decoration:none !important; /*Links nicht unterstreichen*/
+}
+
+/* 
+ * Suchfeld Gesamt
+ */
+.Header .SearchElement.NavBarElement3 {
+	position: absolute !important;
+    width: 180px !important; /* 160px - 10px fuer textabstand */
+    height: 26px !important;
+    padding: 0 0 0 5px !important;
+    margin: 2px 0 0 0 !important; /* oben, rechts, unten, links. */
+	float: none;
+	right: 0px !important;
+	top: 50px !important;
+	border: 0 !important;
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/suche-icon.png") no-repeat scroll right top #e4e5e5 !important;
+}
+
+	/* 
+	 * Suchfeld Textfeld mit Icon
+	 */
+	.Header form.ep-metaparse,
+	.Header .SearchElement .Entry,
+	.Header .SearchElement .InputField {
+		position: relative !important;
+		width: 180px !important;
+		height: 26px !important;
+		float: none;
+		border: 0 !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		/* background-color: transparent !important; */
+		background: none;
+	}
+		/**
+		 * Suchfeld nur Textfeld
+		 *
+		 * @browser: Allgemein
+		 */
+		.Header input.Search {
+			border: 0 !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			height: 26px !important;
+			width: 132px !important; /* 134px - 10px fuer textabstand */
+			/* background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/eingabetext.png") no-repeat scroll right top transparent !important; */
+			/* background-color: transparent !important; */
+			background: none;
+			float: left !important; /* Nachfolgendes Element (der Button) rechts neben das Textfeld*/
+		}
+
+		/**
+		 * Suchfeld nur Textfeld
+		 *
+		 * @browser: IE8
+		 *
+		html.msie .Header input.Search {
+			border: 0 !important;
+			padding: 0 !important;
+			padding-top: 5px !important;
+			margin: 0 !important;
+			height: 21px !important;
+			width: 124px !important; /* 134px - 10px fuer textabstand */
+			/* background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/eingabetext.png") no-repeat scroll right top transparent !important; */
+			/* background-color: transparent !important; *
+			background: none; 
+			float: left !important; /* Nachfolgendes Element (der Button) rechts neben das Textfeld*/
+		}
+		/**
+		 * Suchfeld nur Button/Icon
+		 *
+		 * @browser: All
+		 */
+		.Header .SearchElement .ep-uiInput-wrap,
+		.Header div.PropertyContainer .SearchElement button.ep-metaparse {
+			position: relative !important;
+			right: 0px !important;
+			margin: 0 !important;
+			border: 0 !important;
+			padding: 0 !important;
+			background: none !important;
+		}/*
+		/*Suchicon vertecken*/
+		.Header .SearchElement span.ep-sprite.ep-sprite-s.ep-uiInput-buttonSpriteOnly.Icon.SearchIcon,
+		.Header .SearchElement label.ep-uiInput-wrap button.ep-metaparse.ep-uiInput.ep-uiInput-base.ep-uiInput-button /* bei falscher eingabe */ {
+			background: none !important;
+			width: 25px !important;
+		}
+
+html.msie .Header .SizeContainer .SearchElement {
+    float: none !important;
+}
+
+html.msie .Header .SearchElement .NavBarElement1 {
+    left: 20px !important;
+}
+
+/**
+ * Suchfeld nur Textfeld
+ *
+ * @browser: Firefox
+ *
+html.mozilla input.Search {
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 26px !important;
+    width: 124px !important; /* 134px - 10px fuer textabstand *
+    left: 0 ;
+    top: 0 !important;
+    /* background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/eingabetext.png") no-repeat scroll right top transparent !important; *
+    background-color: #e4e5e5 !important; 
+    float: left !important; /* Nachfolgendes Element (der Button) rechts neben das Textfeld*
+}
+
+/**
+ * Suchfeld nur Textfeld
+ *
+ * @browser: chromium
+ *
+html.webkit input.Search {
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 26px !important;
+    width: 124px !important; /* 137px - 10px fuer textabstand *
+    left: 0 ;
+    top: 0 !important;
+    /* background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/eingabetext.png") no-repeat scroll right top transparent !important; *
+    background-color: #e4e5e5 !important; 
+    float: left !important; /* Nachfolgendes Element (der Button) links neben das Textfeld*
+}
+
+/*
+ * Suchfeld Textfeld bei falscher Eingabe
+ */
+.Header .ep-uiValidate.invalid {
+    /* Bei falscher Eingabe vorerst keine Veraenderung */
+    /*background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/eingabetext.png") no-repeat scroll right top transparent !important;*/
+    background-color: transparent !important; 
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/*
+ * Button einstellungen
+ */
+.Header .Icon,
+.Header .CustomButton * .Icon,
+.Header .CustomButton,
+.Header button.CustomButton {
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    height: 26px !important;
+    /*width: 23px !important;*/
+    width: auto;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    vertical-align: middle !important;
+    overflow: visible;
+    border: 0 !important;
+    border-radius: 0 0 0 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 0;
+    top: 0 !important;
+    outline: none !important;
+}
+
+/*
+ * Bereich um den Button herrum
+ */
+.Header .ep-uiInput-button,
+.Header .ep-uiInput-wrapButton {
+	/*position: absolute !important;*/
+    border: 0 !important;
+    border-radius: 0 0 0 0 !important;
+    padding: 0 !important;
+    height: 26px !important;
+    /*width: 23px !important; /* Fuer buttons mit nebenstehendem Text */
+    width: auto !important;
+    margin: 0 !important;
+    background: none !important;
+    right: 0 !important;
+    top: 0 !important;
+    outline: none !important;
+}
+
+/*
+ * Kompletter CSS-Pfad zu "Warenkorb"
+ * @browser: firefox, chromium
+ *
+.Header div.PropertyContainer div.SizeContainer div.NavigationElement.NavBarElement1 {
+	position: absolute !important;
+    right: 0 !important;
+    top: 25px !important;
+    width: 160px !important;
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 0 0 0 !important;
+    margin: 0 0 2px 0 !important; /* oben, rechts, unten, links. *
+    background: none no-repeat scroll right top transparent !important;
+}*/
+
+/*
+ * Kompletter CSS-Pfad zu "Warenkorb" Verlinkung
+ *
+ * @browser: firefox, chromium
+ * @type: Verlinkung
+ */
+.Header div.PropertyContainer div.SizeContainer div.NavBarElement1 {
+	position: absolute !important;
+    right: 0 !important;
+    top: 25px !important;
+    width: 180px !important; /* 160px - 10px fuer textabstand */
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 0 0 5px !important; /* Textabstand innerhalb von links */
+    margin: 0 0 0 0 !important;
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/warenkorb-icon.png") no-repeat scroll right top #e4e5e5 !important;
+    font-family: Tahoma,Verdana,Helvetica !important;
+    font-size: 11px !important;
+    font: normal !important;
+    text-decoration:none !important; /*Links nicht unterstreichen*/
+	font-weight: normal !important;
+	letter-spacing: 0;
+}
+
+    /*
+     * Kompletter CSS-Pfad zu "Warenkorb" Icon
+     *
+     * @browser: firefox, chromium
+     * @type: img
+     */
+    .Header div.PropertyContainer div.SizeContainer div.NavBarElement1 img {
+        display: none;
+    }
+    /*
+     * Kompletter CSS-Pfad zu "Warenkorb" text
+     * Text horizontal zentral plazieren 
+     *
+     * @browser: firefox, chromium
+     * @type: span
+     */
+    .Header div.PropertyContainer div.SizeContainer div.NavBarElement1 span {
+        height: 26px !important;
+    }
+
+/**
+ * Kompletter CSS-Pfad zu "Suchbegriff"
+ * Aus irgendwelchen Gruenden verschiebt sich die Suche 10px nach rechts,
+ * daher wird dies bei den anderen Elementen NavBarElement0 und NavBarElement2 angepasst.
+ * 
+ * @browser: firefox, chromium
+ *
+.Header div.PropertyContainer div.SizeContainer div.SearchElement.NavBarElement1{
+    width: 150px !important; /* 160px - 10px fuer textabstand *
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 0 0 10px !important;
+    margin: 0 0 0 0 !important; /* oben, rechts, unten, links. *
+    left: 0 !important;
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/suche-icon.png") no-repeat scroll right top #e4e5e5 !important;
+}
+
+/**
+ * Kompletter CSS-Pfad zu "Suchbegriff"
+ * Aus irgendwelchen Gruenden verschiebt sich die Suche 10px nach rechts,
+ * daher wird dies bei den anderen Elementen NavBarElement0 und NavBarElement2 angepasst.
+ * 
+ * @browser: ie8
+ *
+html.msie .Header div.PropertyContainer div.SizeContainer div.SearchElement.NavBarElement1{
+    width: 150px !important; /* 160px - 10px fuer textabstand *
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 0 0 13px !important;
+    margin: 0 0 0 0 !important; /* oben, rechts, unten, links. *
+    position: relative !important;
+    left: 10px !important;
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/suche-icon.png") no-repeat scroll right top #e4e5e5 !important;
+}
+
+/*
+ * Kompletter CSS-Pfad zu "Mein Konto"
+ *
+ * @browser: firefox, chromium
+ */
+.Header div.PropertyContainer div.SizeContainer div.NavigationElement.NavBarElement2,
+.Header div.NavigationElement.NavBarElement2
+{
+	position: absolute !important;
+    right: 0 !important;
+    top: 77px !important;
+    width: 180px !important; /* 160px - 10px fuer textabstand */
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 0 0 5px !important;
+    margin: 2px 0 0 0 !important; /* oben, rechts, unten, links. */
+    background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/statusbox/login-icon.png") no-repeat scroll right top #e4e5e5 !important;
+}
+    /*
+     * Kompletter CSS-Pfad zu "Mein Konto"
+     *
+     */
+    .Header div.PropertyContainer div.SizeContainer div.NavigationElement form input.Action {
+        color: black;
+        width: 100%;
+        text-decoration:none !important; /*Links nicht unterstreichen*/
+    }
+
+/* Allgemein Buttonhoehe und Hintergrundfarbe anpassen */
+button,
+.LoginButton,
+button.ep-uiInput-button,
+input.ep-uiInput-button {
+    height: 27px;
+    background: none no-repeat scroll right top #e4e5e5 !important;;
+}
+
+/**
+ * Fix Buttompadding in Firefox
+ *
+ * @browser: Firefox
+ *
+button::-moz-focus-inner {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+/**
+ * Fix Buttompadding in Firefox
+ *
+ * @browser: Firefox
+ *
+.Header button:focus { 
+    outline: none !important;
+}
+
+/**
+ * Fix ? in Firefox
+ *
+ * @browser: Firefox
+ *
+a:focus { 
+    outline: none !important;
+}
+*/
+
+/* ---------------------------- Seiteninhalte ---------------------------- */
+
+/* -----------------> Allgemein und anderes */
+
+/* Navigationsueberschrift verstecken */
+div.Middle>div.ContentArea>div.ContentAreaInner>div.ContentAreaWrapper>h3,
+div.Middle>div.ContentArea>div.ContentAreaInner>div.ContentAreaWrapper>div.CategoryList>h1 {
+	display: none !important;	
+}
+/* Druckansicht verstecken */
+div.AlignRight {
+	display: none !important;
+}
+
+/* Kein innerer Rand im Content */
+.ContentArea,
+.CategoryText {
+	padding: 0 !important;
+	padding-top: 7px !important;
+	width: 860px !important;
+	/*overflow: visible !important;*/
+}
+
+/* -----------------> Produktliste */
+
+/*
+ * Prdoukte in der Suchansicht zeigen merkwürdige leere Felder an, diese Verstecken
+ * Der Name deutet darauf hin, dass es sich um Kategorielisten handelt
+ * TODO: Pruefen ob auch wichtige Elemente dadurch verloren gehen.
+ */
+.Middle .ListItemCategory {
+	display: none !important; /* Ohne Platzhalter */
+}
+
+/* Versteckte trennlinie */
+div.MozSpacer {
+	visibility: hidden !important; /* Mit Platzhalter */
+}
+
+/*Ueberschrift*/
+
+h1 {
+	color: #D67922 !important;
+}
+
+/*
+ * Head
+ */
+div.ProductListHead {
+    /*background: none no-repeat scroll left bottom #db7d00 !important; orange */
+    background: none no-repeat scroll left bottom white !important;
+}
+
+/*
+ * Foot
+ */
+div.ProductListFoot {
+    /*background: none no-repeat scroll left bottom #db7d00 !important; orange */
+    background: none no-repeat scroll left bottom white !important;
+}
+
+/*Fuer gekuerze Produktbeschreibung*/
+.ProductListImageBox .Description {
+	height:36px !important;
+	padding-bottom:10px !important;
+	overflow: hidden !important;
+}
+
+/*
+ * Kunden, die dieses Produkt gekauft haben, haben auch diese Produkte gekauft...
+ * Hintergrundfarbe
+ */
+.ProductListImageBox tr td,
+.CrossellingCount tr td,
+.BundledProductsTable tr td,
+.CrossellingCount .CrossellingInfoArea,
+.BundledProductsTable bundledproductsinfoarea,
+.CrossellingCount .Price,
+.CrossellingCount .FloatRight,
+.BundledProductsTable .Price,
+.BundledProductsTable .FloatRight {
+	background: white !important;
+}
+
+/*
+ * Inhalt Grundfarbe
+ */
+div.ListItemProductContainer,
+.ListItemProduct .ImageArea,
+table.Basket td,
+table.MiniBasket td,
+.Addresses .Address,
+.AddressOptions,
+table.OrderList td,
+table.ShoppingList td,
+table.CustomerList td, /* Kaufabwicklung, schritte, Hintergrundfarbe */
+.ListItemProductContainer div.ListItemProduct div.InfoArea
+{
+    background: none repeat scroll 0 0 #dbc3a3 !important;
+}
+ 
+ /* Raender */
+div.ListItemProductContainer,
+.ListItemProduct .ImageArea, 
+html .ContentArea table.Basket tr td.SeparateColumn,
+td.SeparateColumn,
+e.Basket td,
+tr.SeparateRow td,
+table.Basket th,
+table.Basket,
+table.OrderList,
+table.ShoppingList,
+table.CustomerList,
+table.OrderList th,
+table.ShoppingList th,
+table.CustomerList th,
+{
+    border-color: #db7d00 !important;
+}
+
+/*
+ * Inhalt Alternativfarbe
+ */
+.AlternateRow .ListItemProduct .ImageArea,
+.AlternateRow .ListItemProduct .InfoArea,
+.AlternateRow .ListItemProduct .PriceArea,
+.AlternateRow, 
+table.Basket tr.AlternateRow td,
+table.ContentTable tr.Alternate td,
+.AlternateRow td,
+.AlternateRow,
+div.AlternateRow,
+.Alternate td,
+.Alternate div,
+.Alternate
+{
+    background-color: #dbad70 !important;
+}
+
+.ProductListImageBox td{
+    background-color: white !important; /* altes Design ueberschreibt dies auch */
+}
+
+/* -----------------> Tabellen */
+
+/*Raender*/
+td, table, th {
+	border-color: #db7d00 !important;
+}
+
+/*
+ * Head
+ */
+.ContentArea .ContextBoxHead,
+.TableHead,
+table.Basket th,
+table.OrderList th,
+table.ShoppingList th,
+table.CustomerList th
+{
+    background: none no-repeat scroll left bottom #db7d00 !important;
+}
+
+/* -----------------> Dialoge */
+
+.Dialog div.InputLabelling,
+.Dialog td.InputLabelling,
+.Dialog div.InputBlock,
+.Dialog tr.InputBlock,
+.Dialog div.InputField,
+.Dialog td.InputField,
+.AddressDialog,
+.ContentArea .ContextBoxBody,
+.Dialog,
+.ContentArea table.Dialog,
+.Dialog div.TextBlock,
+.Dialog div.LeftHalf,
+.Dialog td.LeftHalf,
+.Dialog div.RightHalf,
+.Dialog td.RightHalf
+{
+    background: none repeat scroll 0 0 #dbc3a3 !important;
+    border-color: #db7d00 #db7d00 !important;
+}
+
+/* Benachrichtigungen wieder anzeigen */
+.DialogMessage h3 {
+	display: block !important;
+}
+/* -----------------> Anderes
+/*
+ * Alternativfarben
+ */
+div.ListItemProductContainer.AlternateRow,
+tr.AlternateRow td,
+table.ContentTable tr.Alternate td,
+.AlternateRow td,
+.AlternateRow, div.AlternateRow,
+.Alternate td,
+.Alternate div,
+.Alternate {
+    background-color: #dbad70 !important;
+}
+
+/*
+ * Alternativfarben
+ */
+.Separator {
+	 display: none !important;
+}
+
+/* ---------------------------- eigene Seiteninhalte ---------------------------- */
+/* temporaer */
+#content {
+	padding:0; 
+	/*border:thin solid red; zum testen*/
+	border: 0;
+	margin:25px;
+	width: 862px;
+	height: 1000px;
+}
+
+/* Inhaltsbox der Kategorien */
+#content_kat {
+	padding:0;
+	width: 860px;
+	min-height: 350px;
+}
+
+/* Schloesser */
+#title_01 {
+	padding:0;
+	border:0;
+	width: 124px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/schloesser.jpg") no-repeat scroll right top transparent;
+}
+
+/* Zippos */
+#title_02 {
+	padding:0;
+	border:0;
+	width: 127px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/zippos.jpg") no-repeat scroll right top transparent;
+}
+
+/* Musik */
+#title_03 {
+	padding:0;
+	border:0;
+	width: 125px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/musik.jpg") no-repeat scroll right top transparent;
+}
+
+/* Messer */
+#title_04 {
+	padding:0;
+	border:0;
+	width: 103px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/messer.jpg") no-repeat scroll right top transparent;
+}
+
+/* Taschenlampen */
+#title_05 {
+	padding:0;
+	border:0;
+	width: 196px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/taschenlampen.jpg") no-repeat scroll right top transparent;
+}
+
+/* Industrie */
+#title_06 {
+	padding:0;
+	border:0;
+	width: 185px;
+	height: 304px;
+	float: left;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/title/industrie.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Zippo {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Zippo.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Apple {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Apple.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Feuerwehr {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Feuerwehr.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Holzteller {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Holzteller.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Hundemarken {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Hundemarken.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Zuhause {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_zuhause.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Messer {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Messer.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Musik {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Musik.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Schloesser {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Schloesser.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Stifte {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Stifte.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Taschenlampen {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Taschenlampen.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Visi {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Visi.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Unterwegs {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Unterwegs.jpg") no-repeat scroll right top transparent;
+}
+
+#kat_Tiere {
+	padding:0;
+	border:0;
+	width: 860px;
+	height: auto;
+	padding-top: 276px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/kategorien/Kategorie_Tiere.jpg") no-repeat scroll right top transparent;
+}
+
+.unterkat_button_all {
+	margin:0;
+	margin-top: 10px;
+	height: 46px;
+	width: 100%;
+	
+	padding:0;
+}
+
+.unterkat_button_together {
+	height: 42px;
+	width: 23%;
+	
+	padding:0;
+	margin:0;
+	
+	margin-left: 1%;
+	margin-right: 1%;
+	
+	border-top-style:solid;
+	border-top-width: 2px;
+	border-top-color: #48494b;
+	
+	border-right-style:solid;
+	border-right-width: 0;
+	border-right-color: transparent;
+	
+	border-bottom-style:solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #48494b;
+	
+	border-left-style:solid;
+	border-left-width: 0;
+	border-left-color: transparent;
+	
+	/*background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/unterkatblitz.png") no-repeat scroll left top #d67922;*/
+	color: white !important;
+	float: left;
+}
+
+.unterkat_button_flash {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	
+	width: 77px;
+	height: 42px;
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/unterkatblitz.png") no-repeat scroll left top #d67922;
+	
+	float: left;
+}
+
+.unterkat_button_text {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 3px;
+	padding-bottom: 0;
+	
+	width: 100%; /* (860 / 4) - 72 - 14 = 134 */
+	height: 42px;
+	color: white !important;
+	float: left;
+	font-size: 14px !important;
+	font-weight: bold !important;
+	
+	background-color: #d67922;
+}
+
+.unterkat_button_untertext {
+	font-size: 12px !important;
+	font-weight: normal !important;
+	color: white !important;
+}
+
+.inhalt {
+	padding: 10px !important;
+	width: 840px;
+}
+
+
+/* Druckansicht */
+div.OnlyInPrintViewVisible {
+	background: url("https://shop.strato.de/WebRoot/Store21/Shops/62874629/MediaGallery/metis/Logo.png") no-repeat scroll left top white !important;
+	padding-top: 100px;
+}
+
+.PrivacyPolicy,
+.TermsAndConditions {
+	width: 800px;
+}
+
+/*-- Bestellvorgang --*/
+
+/* Infoboxen der Schritte 1.Warenkorb 2.Adresse 3.Bestellung, der aktuell aktive */
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper table.BasketDetails tbody tr td ul.OrderProcess li.ActiveItem {
+	padding: 5px 0 0 0; /* Damit der Beschreibungstext nicht direkt anliegt */
+	margin: 0 5px 0 0;
+	background: none repeat scroll 0 0 #db7d00 !important;
+}
+	/* Ueberschrift Farbe */
+	.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper table.BasketDetails tbody tr td ul.OrderProcess li.ActiveItem a span.ShowElement {
+		color: white;
+	}
+
+/* Infoboxen der Schritte 1.Warenkorb 2.Adresse 3.Bestellung, die nicht aktiven */
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper table.BasketDetails tbody tr td ul.OrderProcess li {
+	padding: 5px 0 0 0; /* Damit der Beschreibungstext nicht direkt anliegt */
+	margin: 0 5px 0 0;
+	background: none repeat scroll 0 0 #dbc3a3 !important;
+}
+/*Infofeld*/
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper table.BasketDetails tbody tr td div.BasketAddressForm form#BasketAddressForm.ep-metaparse div.DialogSnippet,
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper table.BasketDetails tbody tr td div.Offer form#BasketOfferForm.ep-metaparse div.Basket div.BasketComment div.PreLineBasketComment,
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper div.CustomerOrder div.Basket div.BasketComment div.PreLineBasketComment {
+	background: none repeat scroll 0 0 #dbad70 !important;
+	border-color: #db7d00 !important;
+}
+/*Vom Kunden angegebene Adresse*/
+td.Address {
+	background: none repeat scroll 0 0 #dbad70 !important;
+	border-color: #db7d00 !important;
+	margin: 5px;
+	padding: 5px;
+}
+	/*Überschrift*/
+	td.Address h3.BottomSmallMargin {
+		background: none repeat scroll 0 0 #db7d00 !important;
+	}
+
+/*Suchergebnisse*/
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper div.ProductListHead {
+	background: none repeat scroll 0 0 #db7d00 !important;
+	height: 18px !important;
+	border-color: #db7d00 !important;
+}
+	/*Box fuer Sortierlinks Name Preis*/
+	.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper div.ProductListHead div.InnerHead {
+		margin-left: 730px !important;
+	}
+		/*Name Preis ansich*/
+		.OrderByName, .OrderByListPrice {
+			position: relative !important;
+			left: auto !important;
+			right: auto !important;
+			top: 0 !important;
+		}
+			.OrderSelector a {
+				color: white !important;
+			}
+
+/*Suchbutton unterhalb von Produktansichten*/
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper div.CategoryList div.SearchMask form#categorySearch.ep-metaparse div div.FloatLeft label.ep-uiInput-wrap {
+	height: 26px; !important;
+	overflow: visible !important;
+}
+.Middle div.ContentArea div.ContentAreaInner div.ContentAreaWrapper div.CategoryList div.SearchMask form#categorySearch.ep-metaparse div div.FloatLeft label.ep-uiInput-wrap button.ep-metaparse {
+	background: none !important;
+	overflow: visible !important;
+	margin-bottom: 7px !important;
+}
+
+
+
