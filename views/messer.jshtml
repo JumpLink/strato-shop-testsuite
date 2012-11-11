@@ -1,240 +1,80 @@
 <div id="content_kat">
 <div id="kat_Messer">
-<div class="unterkat_button_all">
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/schweizer" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Schweizer Messer
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Bildergalerie Messer -->
+	<a id="messer-bildergalerie" class="unterkat_button_img" href="/messer/bildergalerie"></a>
+
+	<!-- Schweizer Messer -->
+	<a id="schweizer-messer" class="unterkat_button_img" href="/messer/schweizer"></a>
+
+	<!-- Anglermesser -->
+	<a id="Anglermesser" class="unterkat_button_img" href="/messer/angler"></a>
 </div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/angler" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Anglermesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Army-Messer -->
+	<a id="Army-messer" class="unterkat_button_img" href="/messer/army"></a>
+
+	<!-- Bowie-Messer-->
+	<a id="Bowie-messer" class="unterkat_button_img" href="/messer/bowie"></a>
+
+	<!-- Einhandmesser -->
+	<a id="Einhandmesser" class="unterkat_button_img" href="/messer/einhand"></a>
 </div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/army" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Army-Messer
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Gürtelmesser -->
+	<a id="Gürtelmesser" class="unterkat_button_img" href="/messer/guertel"></a>
+
+	<!-- Jagdmesser -->
+	<a id="Jagdmesser" class="unterkat_button_img" href="/messer/jagd"></a>
+
+	<!-- Keramikmesser -->
+	<a id="Keramikmesser" class="unterkat_button_img" href="/messer/keramik"></a>
 </div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/bowie" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Bowie-Messer
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Kindermesser -->
+	<a id="Kindermesser" class="unterkat_button_img" href="/messer/kinder"></a>
+
+	<!-- Kochmesser -->
+	<a id="Kochmesser" class="unterkat_button_img" href="/messer/koch"></a>
+
+	<!-- Multitools -->
+	<a id="Multitools" class="unterkat_button_img" href="/messer/multitool"></a>
 </div>
-</a>
-			</div>
-<div class="unterkat_button_all">
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/einhand" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Einhandmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Rasiermesser -->
+	<a id="Rasiermesser" class="unterkat_button_img" href="/messer/rasier"></a>
+	<!-- Rettungsmesser -->
+	<a id="Rettungsmesser" class="unterkat_button_img" href="/messer/rettung"></a>
+
+	<!-- Seglermesser -->
+	<a id="Seglermesser" class="unterkat_button_img" href="/messer/segler"></a>
 </div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/guertel" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Gürtelmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
+<div class="unterkat_button_img_all">
+	<!-- Taschenmesser -->
+	<a id="Taschenmesser" class="unterkat_button_img" href="/messer/taschen"></a>
+
+	<!-- Messerzubehoer -->
+	<a id="Messerzubehoer" class="unterkat_button_img" href="/messer/zubehoer"></a>
 </div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/jagd" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Jagdmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/keramik" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Keramikmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-			</div>
-<div class="unterkat_button_all">
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/kinder" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Kindermesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/koch" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Kochmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/multitool" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Multitools
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/rasier" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Rasiermesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-						
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-			</div>
-<div class="unterkat_button_all">
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/rettung" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Rettungsmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-							
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/segler" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Seglermesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-							
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/taschen" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Taschenmesser
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-							
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-				<a class="unterkat_button_together" href="http://www.wunschgravur.de/messer/zubehoer" style="width: 23%;">
-<div class="unterkat_button_text">
-<div class="unterkat_button_flash"></div>
-<!-- ANFANG: Hier Ueberschrift einfuegen -->
-							Messerzubehör
-						<!-- ENDE: Hier Ueberschrift einfuegen -->
-<div class="unterkat_button_untertext">
-						<!-- ANFANG: Hier Untertext einfuegen -->
-							
-						<!-- ENDE: Hier Untertext einfuegen -->
-						</div>
-</div>
-</a>
-			</div>
 </div>
 <p class="inhalt">
-		<!-- ANFANG: nur dieser Bereich darf veraendert werden -->
-			Alle Messer werden mit einem hochwertigen Laser individuell graviert. 
-			Alle Artikel können mit einem Text, Foto, Grafiken oder Logo graviert werden. Gravierbar ist die Vorderseite und/oder Rückseite.
-			Ohne weitere Angaben in Ihrer Betellung wird die Klinge graviert.
-			<span style="text-decoration: underline;"><b>Die Preisangabe bezieht sich auf den Artikel inklusive einseitiger Textgravur, inkl. MwSt., zzgl. Versand.</b></span>
-			Welche Gravurart und Schriftart Sie wünschen, können Sie auf der Artikelseite auswählen. Klicken Sie für weitere Infos auf Ihren Wunschartikel!
-			Sonderwünsche realisieren wir gerne.
-			Sie können uns Ihre Sonderwünsche zur Bestellung über das Feld ‚Bemerkungen zur Bestellung’ in dem Warenkorb mitteilen. 
-			Für Mengenrabatte oder andere Anfragen kontaktieren Sie uns bitte vor Bestellung über:
-			<a href="mailto:info@wunschgravur.de">info@wunschgravur.de</a>.
-		<!-- ENDE: nur dieser Bereich darf veraendert werden -->
-		</p>
+<!-- ANFANG: nur dieser Bereich darf veraendert werden -->
+Alle Messer werden mit einem hochwertigen Laser individuell graviert. 
+Alle Artikel können mit einem Text, Foto, Grafiken oder Logo graviert werden. Gravierbar ist die Vorderseite und/oder Rückseite.
+Ohne weitere Angaben in Ihrer Betellung wird die Klinge graviert.
+<span style="text-decoration: underline;"><b>Die Preisangabe bezieht sich auf den Artikel inklusive einseitiger Textgravur, inkl. MwSt., zzgl. Versand.</b></span>
+Welche Gravurart und Schriftart Sie wünschen, können Sie auf der Artikelseite auswählen. Klicken Sie für weitere Infos auf Ihren Wunschartikel!
+Sonderwünsche realisieren wir gerne.
+Sie können uns Ihre Sonderwünsche zur Bestellung über das Feld ‚Bemerkungen zur Bestellung’ in dem Warenkorb mitteilen. 
+Für Mengenrabatte oder andere Anfragen kontaktieren Sie uns bitte vor Bestellung über:
+<a href="mailto:info@wunschgravur.de">info@wunschgravur.de</a>.
+<!-- ENDE: nur dieser Bereich darf veraendert werden -->
+</p>
 </div>
 
 <!-- ANFANG: Links als Maps für das Kategoriebild -->
 <!-- Zippo mit Foto -->
-<a style="display: scroll; position: absolute; top: 0px; left: 0px; width: 200px; height: 280px;" href="http://www.wunschgravur.de/messer/schweizer"></a> 
+<a style="display: scroll; position: absolute; top: 0px; left: 0px; width: 200px; height: 280px;" href="/messer/schweizer"></a> 
 <!-- Zippo mit Foto -->
-<a style="display: scroll; position: absolute; top: 0px; left: 200px; width: 220px; height: 280px;" href="http://www.wunschgravur.de/messer/einhand"></a>
+<a style="display: scroll; position: absolute; top: 0px; left: 200px; width: 220px; height: 280px;" href="/messer/einhand"></a>
 <!-- ENDE: Links als Maps für das Kategoriebild -->
