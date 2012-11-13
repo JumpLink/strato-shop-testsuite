@@ -2,12 +2,14 @@
 
 <meta charset="utf-8">
 <title>@locals.title - wunschgravur.de</title>
-<script type="text/javascript" href="http://www.wunschgravur.de/epages/62874629.sf/de_DE/?ViewAction=SF-ViewJQueryConfig&amp;ObjectID=6255867&amp;CurrencyID=EUR&amp;CacheName=Store21-6.14.1-0"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://www.wunschgravur.de/epages/62874629.sf/de_DE/?ViewAction=SF-ViewJQueryConfig&ObjectID=6255867&CurrencyID=EUR&CacheName=Store21-6.14.1-0"></script>
 
 <script type="text/javascript">
 (function(j){
 j.canvas = {
-fontRoot                     : '/WebRoot/Store21/4A89/4EC0/2581/51C2/AE35/C0A8/28BE/D1AD'
+fontRoot                     : 'http://www.wunschgravur.de/WebRoot/Store21/4A89/4EC0/2581/51C2/AE35/C0A8/28BE/D1AD'
 };
 })(jQueryConfig);
 
@@ -51,7 +53,13 @@ catch(e){
 
 <link rel="canonical" href="http://www.wunschgravur.de/messer">
 
-<link href="http://www.wunschgravur.de/WebRoot/Store21/Shops/62874629/Styles/Metis/StorefrontStyle_150.css" rel="stylesheet" type="text/css">
+
+<link href="http://www.wunschgravur.de/WebRoot/StoreTypes/6.14.1/Strato/GlobalStyle.css" rel="stylesheet" type="text/css">
+
+<!--<link href="http://www.wunschgravur.de/WebRoot/Store21/Shops/62874629/Styles/Metis/StorefrontStyle_150.css" rel="stylesheet" type="text/css">-->
+<link href="http://www.wunschgravur.de/WebRoot/Store21/Shops/62874629/Styles/Metis/StorefrontStyle_151.css" rel="stylesheet" type="text/css">
+
+
 
 <!--[if IE]>
 <link href="http://www.wunschgravur.de/WebRoot/StoreTypes/6.14.1/Strato/GUI/de_epages/design/css/IEStyles.css" rel="stylesheet" type="text/css" />
@@ -65,10 +73,11 @@ catch(e){
 }
 </script>
 
+
 <!-- Begin: User-defined HTML Head area -->
 <!-- <script type="text/javascript" src="https://dl.dropbox.com/u/55722973/metis/wunschgravur/metis.js"></script> -->
 <!-- <link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/u/55722973/metis/wunschgravur/metis.css"> -->
-<link rel="stylesheet" type="text/css" href="/css/metis.css">
+<link rel="stylesheet" type="text/css" href="/WebRoot/Store21/Shops/62874629/MediaGallery/metis/css/metis.css">
 <meta name="google-site-verification" content="kIqapRVIcc8-7WVOhI_ypUYuV2jKVDD9pev-L5SqURo">
 <!-- End: User-defined HTML Head area -->
 <script type="text/javascript">
@@ -112,7 +121,7 @@ catch(e){
 <div class=" NavBarElement0" id="NavElement_12838051">
 
 <div class="NavigationText NavBarElement0 ">
-<a href="http://www.wunschgravur.de/startseite"><img src="/WebRoot/Store21/Shops/62874629/MediaGallery/metis/Logo.png" alt="Wunschgravur.de" style="border: 0px"></a>
+<a href="http://www.wunschgravur.de/startseite"><img src="http://www.wunschgravur.de//WebRoot/Store21/Shops/62874629/MediaGallery/metis/Logo.png" alt="Wunschgravur.de" style="border: 0px"></a>
 </div>
 </div>
 <div class="NavBarElement1 NavElementIcon ">
