@@ -14,15 +14,14 @@ app.configure(function() {
 
 // fetchUrl("http://www.wunschgravur.de/", function(error, meta, body){
 //     console.log(body.toString());
-//     //$(".CategoryList").html("<b>test jea!</b>");
+//     //$(".CategoryList")("<b>test jea!</b>");
 // });
 
-function render(filename, res) {
-	fs.readFile("./views/"+filename, 'utf8', function(err, data) {
+function render(categorie_name, res) {
+	fs.readFile("./views/"+categorie_name+".html", 'utf8', function(err, data) {
 		if (err) throw err;
-		console.log(data);
 		jsdom.env({
-		  html: "http://www.wunschgravur.de/",
+		  html: "http://www.wunschgravur.de/"+categorie_name,
 		  scripts: ["http://code.jquery.com/jquery.js"],
 		  done: function (errors, window) {
 		    var $ = window.$;
@@ -36,21 +35,22 @@ function render(filename, res) {
 
 //app.set('view engine', 'jshtml');
 
-app.get('/', function(req, res) { render("index.html", res) });
-app.get('/startseite', function(req, res) { render("startseite.html", res); });
-app.get('/messer', function(req, res) { render("messer.html", res); });
-app.get('/musik', function(req, res) { render("musik.html", res); });
-app.get('/schloesser', function(req, res) { render("schloesser.html", res); });
-app.get('/stifte', function(req, res) { render("stifte.html", res); });
-app.get('/taschenlampen', function(req, res) { render("taschenlampen.html", res); });
-app.get('/tiere', function(req, res) { render("tiere.html", res); });
-app.get('/unterwegs', function(req, res) { render("unterwegs.html", res); });
-app.get('/visitenkarten', function(req, res) { render("visitenkarten.html", res); });
-app.get('/zippos', function(req, res) { render("zippos.html", res); });
-app.get('/holz', function(req, res) { render("holz.html", res); });
-app.get('/zuhause', function(req, res) { render("zuhause.html", res); });
-app.get('/fahrzeuge', function(req, res) { render("fahrzeuge.html", res); });
-app.get('/kinderbesteck', function(req, res) { render("kinderbesteck.html", res); });
+app.get('/', function(req, res) { render("index", res) });
+app.get('/startseite', function(req, res) { render("startseite", res); });
+app.get('/messer', function(req, res) { render("messer", res); });
+app.get('/musik', function(req, res) { render("musik", res); });
+app.get('/schloesser', function(req, res) { render("schloesser", res); });
+app.get('/stifte', function(req, res) { render("stifte", res); });
+app.get('/taschenlampen', function(req, res) { render("taschenlampen", res); });
+app.get('/tiere', function(req, res) { render("tiere", res); });
+app.get('/unterwegs', function(req, res) { render("unterwegs", res); });
+app.get('/visitenkarten', function(req, res) { render("visitenkarten", res); });
+app.get('/zippos', function(req, res) { render("zippos", res); });
+app.get('/holz', function(req, res) { render("holz", res); });
+app.get('/zuhause', function(req, res) { render("zuhause", res); });
+app.get('/fahrzeuge', function(req, res) { render("fahrzeuge", res); });
+app.get('/kinderbesteck', function(req, res) { render("kinderbesteck", res); });
+app.get('/aktionsprodukte', function(req, res) { render("aktionsprodukte", res); });
 
 /* Content Only */
 app.get('/content', function(req, res) { res.render('index', {title: "Startseite"}) });
